@@ -1,0 +1,21 @@
+<img src="images/light.png" alt="light image">
+<h1 class="fontblue" id="heading">Suggestion Box</h1>
+<hr>
+
+<div ng-repeat="post in posts | orderBy:'-upvotes'">
+	<h2 class="medfont">{{ post.title }}</h2>
+	<p class="spacing">
+		<span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span> 
+		<span>Upvotes: {{ post.upvotes }} | <a href="#/suggestion/{{$index}}" class="fontblue">Comments</a></span>
+	</p>
+	<hr>
+</div>
+
+<form class="spacing" ng-submit="addSuggestion()">
+	<h3 class="fontblue">Submit Your Suggestion</h3>
+	<div class="form-group">
+		<input type="text" class="form-control" placeholder="Great ideas here" ng-model="title">
+	</div>
+	<button type="submit" class="btn btn-primary">Suggest</button>
+</form>
+

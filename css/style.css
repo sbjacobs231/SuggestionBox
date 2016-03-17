@@ -1,0 +1,39 @@
+body {
+	background-color: #272a32;
+	color: white;
+	margin-top: 40px;
+	font-family: 'Raleway', sans-serif;
+}
+img {
+	width: 100px;
+}
+#heading {
+	display: inline-block;
+	font-size: 55px;
+	position: absolute;
+	font-style: italic;
+}
+.fontblue {
+	color: #77B5FE;
+}
+.glyphicon {
+	color: #00FE00;
+}
+.glyphicon:hover {
+	cursor: pointer;
+}
+.italic {
+	font-style: italic;
+}
+.spacing {
+	margin-bottom: 25px;
+}
+.medfont {
+	font-size: 35px;
+}
+.bigfont {
+	font-size: 55px;
+}
+.commentfont {
+	font-size: 20px;
+}
